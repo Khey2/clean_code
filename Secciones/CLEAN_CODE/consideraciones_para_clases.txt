@@ -1,0 +1,38 @@
+CONSIDERACIONES PARA CLASES
+
+
+Clases
+
+    - deben tener como nombre: susantivo o frases
+                                 de sustantivos
+
+        MAL:   son malos porque son MUY genericos
+
+            - class Manager {};
+            - class Data {};
+            - class Info {};
+            
+            el nombre de la clase es lo ma simportante, 
+            le da un sentido logico
+            a la vida de dicha clase, un nombre generico
+             le da MUCHAS
+            responsabilidades a la clase...
+
+            - class SpecialMonsterView
+
+    - EL NOMBRE es lo ma simportante de la clase
+    - EL NOMBRE debe ser formado por un sustantivo o frases
+            en sustantivo
+
+    - NO DEBEN de ser nombres muy genericos.
+    - DEBEN usar UpperCamelCase en nombres
+
+
+
+    ¿ Que exactamente hace la clase?
+
+    ¿ Como exactamente esta clase realiza cierta tarea?
+
+    ¿ Hay algo espesifico sobre su ubicacion?
+
+

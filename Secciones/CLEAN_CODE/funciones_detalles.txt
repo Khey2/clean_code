@@ -1,0 +1,87 @@
+FUNCIONES
+
+
+    "Sabemos que estamos desarrollando codigo 
+    limpio (clean code ) cuando cada funcion 
+    hace exactamente lo que su nombre indica"
+
+
+EJEMPLO QUE ESTA CORRECTO:
+
+sendEmail debe SOLO mandar un email...
+
+function sendEmail(): boolean {
+
+    // Verificar Correo
+
+    // Construir cuerpod el mensaje
+
+    // Enviar Correo
+
+    //Si todo sale bien
+    return true;
+}
+
+PROBLEMA:
+
+El problema aca es lo que hace la funcion... la funcion 
+- manda email
+- verifica si el usuario existe
+- revisa la CONTRASEÑA
+- crea usuario en base de datos
+
+function sendEmail(): boolean {
+
+    // Verificar SI EL USUARIO existe
+
+    // REVISAR CONTRASEÑA
+
+    // crear usuario en la base de datos
+
+    // Si todo sale bien
+    return true;
+}
+
+
+
+PARAMETROS Y ARGUMENTOS:
+
+function sendEmail ( user ) // user: es 
+                            el parametro que recibe
+                             la funcion
+
+//cuando mandas a llamar la funcion en este caso
+// el correo que mandas es el ARGUMENTO
+sendEmail( 'msilbvarubios@hotmail.com);
+
+
+
+resumen: cuando utilizas es argumentos, 
+cuando defines la funcion
+son parametros
+
+
+
+REGLA DE ORO: Se recomienda que limites a 3 parametros
+las definiciones de funciones.
+
+
+idealmente es mejor IMPLEMENTAR una interfaz en funciones que requieran 
+mas de 3 parametros.. para delegar a la innterfaz el tipado
+de los parametros
+
+
+//interface
+interface SendEmailOptions{
+    toWhom:  string;
+    from:    string;
+    body:    string;
+    subject: string;
+    apiKey:  string;
+}
+
+function sendEmail( { toWhom, from, body, subject, apiKey }: SendEmailOptions ): boolean{
+
+}
+
+

@@ -1,0 +1,81 @@
+Arreglos - Arrays
+
+        BUENO:
+            - Pon nombres en plural...como fruits, 
+            people , pays.
+
+            -Excelente: fruitNames, peoplesOfSystem
+
+
+Booleanos - Booleans
+
+
+        - usa prefijos como is, can, has...
+
+        - EVITA NEGACIONES EN EL NOMBRE
+
+                MAL:
+
+                 - open = true,    // no se a que se refiere
+                 - write = true    //puedo escribir
+                 - fruit = true    //fruit true??
+                 - active = false  //
+                 - noValues = true
+                 - notEmpty = true
+                
+                CORRECTO: con prefijos
+
+                    - isOpen ( esta abierto )
+                    - canWrite ( puede escribir)
+                    - hasFruit
+                    - isActive = true
+                    - hasValues = false
+                    - isEmpty
+
+
+Numeros
+
+        - puedes usar palabras como min, max, total
+        - puedes usar palabra of
+
+            MAL:
+
+                - fruits = 3
+                - cars = 10 
+
+            BIEN:
+
+                - maxFruits = 5
+                - minFruits = 1
+                - totalFruits = 3
+
+                - totalOfCars = 5
+            
+
+FUNCIONES:
+
+        - Deben de representar acciones ( Verbo de la accion + susnantivo )
+
+            MAL:   
+
+                - createUserIfNotExists(); // evita añadir lo que hace la funcion
+                                            // exactamente
+                                            // seria ideal colo createUser
+                                            // por dentro la funcion 
+                                            // determinara 
+                                            //si existe o no
+
+                - updateUserIfNotEmpty() // igual que lo de arriba
+                - sendEmailIfFieldExists
+
+
+            MEJOR: solo se indica verbo + susnatntivo sin espesificar excatamente
+                    que hace por dentro esta funcion
+
+                - createUser();
+                - updateUser();
+                - sendEmail();
+
+            
+            ( tiene a ser subjetivo lo malo y bueno, peor trata que los nombres
+            se puedan leer y comprender facilmente... verbo de la accion + sustantivo )

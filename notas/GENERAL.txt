@@ -1,0 +1,12 @@
+CLEAN CODE
+
+1.- Nombra de manera 
+    correcta y personalizada
+
+        - enteros
+        - booleanos
+        - arrays
+        - funciones ( args y parametros )
+        - Clases
+
+

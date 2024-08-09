@@ -1,0 +1,125 @@
+La deuda tecnica es la falta de calidad de alguna parte
+del codigo...se resume a una FALTA DE CALIDAD EN
+ ALGUN PROCESO DE NUESTRO
+DESARROLLO DE SOFTWARE
+
+
+EJEMPLOS:
+
+    1.- falto refacorizacion
+    2.- se hizo algo de manera inadecuada
+    3.- falto testing
+
+por cuestiones de tiempo dejaste algo "medio raro" 
+que funciona
+y dejas la deuda a futuro,
+
+ LA SECCION 1 es 
+sobre deuda tecnica.
+
+
+Temas puntuales de la sección
+En esta sección estaremos hablando y haciendo 
+ejercicios sobre:
+
+    - ¿Qué es la deuda técnica?
+    - ¿Cómo se paga la deuda técnica?
+    - Refactorización
+    - Nombres de variables
+    - Nombres para funciones
+    - Ejercicios de refactorización
+    - Principio DR
+
+Esta sección procura que empecemos a escribir 
+código que sea fácil de leer por nosotros y otros
+ desarrolladores.
+
+
+¿Que es la deuda tecnica?
+
+R: la falta de calidad de codigo que va a 
+generar costos economicos, es una deuda que 
+genera costos a futuro
+
+    - tiempo en realizar mantenimientos
+    - tiempo de refactorizar codigo 
+    - tiempo en comprender codigo
+    - Tiempo adicional en transferencias del codigo
+
+
+----- 4 CUADRANTES DE LA DEUDA TECNICA ----------------
+
+
+    1.- Deuda tecnica imprudente: 
+                    
+                    es cuando el desarrollador actua
+                    de forma conciente e imprudente 
+                  , lleva a un proyecto
+                    con poca calidad de codigo
+
+                    "no hay tiempo, solo copia y pega para
+                    terminar esto YA"
+
+    2.- deuda inadvertida: PELIGROSA, se genera por 
+                           falta de experiencia
+                            o conocimiento... 
+                            "¿Que son patrones de diseño?
+
+
+    3.- deuda prudente: 
+                        sabes que tienes la deuda, eres 
+                        conciente pero, si no la pagas a 
+                        tiempo, pagaras mas intereses
+                        despues
+
+    4.-  deuda prudente e inadvertida:
+
+                        en los proyectos que empiezas no tienes el 
+                        contexto del proyecto, es una deuda
+                        que te das cuenta DESPUES cuando empiezas a
+                        codificar la app, ahi te das cuenta de las deudas
+                        y aprendes.
+
+Caer en deuda tecnica es normal y a menudo inevitable 
+( como el fallar )
+, mejorar es la clave para cada vez tener menos deudas.
+
+
+¿Como se paga una deuda tecnica?
+
+R: REFACTORIZANDO el codigo para que sea mas entendible
+    y tolerable a cambios.
+
+
+idealmente deberias testear el codigo con librerias.
+
+sin testing NO PUEDES SABER si la refactorizacion funciona
+de manera correcta...sin pruebas...caemos en el
+
+"si funciona, no lo toques"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
