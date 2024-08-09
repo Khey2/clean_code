@@ -10,3 +10,16 @@ CLEAN CODE
         - Clases
 
 
+
+
+
+PRINCIPIO DE RESPONSABILIDAD UNICA: 
+
+        cada funcion / clase debe tener SOLO 1 RESPONSABILIDAD, debes separar todo y evitar acomplamientos
+
+
+
+CLASES COMPUESTAS: son clases usadas para CONECTAR a mas clases, es donde se centraliza todo..
+
+es mandarle 9 parametros por ejemply y que se dividan esos params a inicializar las clases
+que ocupan 1, 3, 5 ,etc, mediante esta clase puedes acceder a cualquier otra clase...

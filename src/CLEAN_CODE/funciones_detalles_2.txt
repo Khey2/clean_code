@@ -1,0 +1,56 @@
+FUNCIONES - OTRAS RECOMENDACIONES
+
+
+    - entre mas simple la funcion mejor.
+
+    - deben tener un tamaño reducido
+
+    - Funciones de una sola linea sin causar complejidad
+    ( que no sea dificil de leer para nosotros,
+     aunque sea mas optimo en tema de microsegundos )
+
+    - Menos de 20 lineas de codigo por funcion 
+      ( recomendacion )
+
+
+    - Evita el uso del ELSE, no uses else a menos que 
+     sea estrictamente necesario
+
+     - Prioriza el uso de la condicion ternaria
+
+
+MAL:
+
+
+const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }) => {
+        let result;
+        if ( isDead ) {
+            result = 1500;
+        } else {
+            if ( isSeparated ) {
+                result = 2500;
+            } else {
+                if ( isRetired ) {
+                    result = 3000;
+                } else {
+                    result = 4000; 
+                }
+            }
+        }
+        
+        return result;
+    }
+
+    const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }): number => {
+
+            if ( isDead ) return 1500;
+            
+            if ( isSeparated ) return 2500;
+        
+            return ( isRetired ) ? 3000 : 4000;
+    }
+
+
+
+BIEN:
+

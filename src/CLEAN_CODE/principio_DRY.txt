@@ -1,0 +1,12 @@
+PRINCIPIO DRY ( Dont Repeat Yourself )
+
+"Si quieres ser un programador productivo, esfuerzate por escribir
+CODIGO LEGIBLE"
+
+es:
+
+    - evitar duplicar codigo en muchos lados.
+
+    - centraliza procesos
+
+    - simplifica pruebas

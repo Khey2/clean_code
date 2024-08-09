@@ -1,0 +1,44 @@
+Las clases deben tener:
+
+    - una responsabilidad ESPESIFICA Y BIEN CLARA.
+
+si pones nombres genericos... LAS CLASES
+tendran muchas responsabilidades
+
+
+Class Casa{
+    lavanderia
+    carros,
+    familia
+    tele,
+    patio,
+    pasto
+    animales,
+    etc
+}
+
+
+ESTO HACE QUE LA CLASE SEA DIFICIL DE:
+
+    - expandir
+    - mantener
+    - probar
+    - que parte de la clase hace x cosa.
+
+
+DRY: una clase debe tener una responsabilidad UNICA
+
+( esta clase hace x y solo x)
+
+
+NOTA: los comentarios NO DEBERIAN SER NECESARIOS, osea, los comentarios
+en el codigo vienen de mas porque si tienes que poner un comentario explicando
+que hace algo en particular, significa que ese CODIGO no es lossuficientemente AUTOEXPLICATIVO.
+
+
+los comentarios deberian responder 
+
+- ¿Porque decidiste seguir este camnino?
+- ¿Porque hiciste la funcion de esta manera?
+- ¿Porque usaste X paquete y no Y ?
+
