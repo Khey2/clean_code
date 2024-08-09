@@ -1,0 +1,30 @@
+ESTRUCTURA RECOMENDADA PRA UNA CLASE:
+
+
+"El buen codigo parece estar escrito por alguien a quien le importa"
+
+
+Cuando trabajas con clase... TODOS 
+EN EL EQUIPO DE TRABAJO DEBEN CREARLAS DE LA MISMA MANERA.
+
+( OSEA EN EL MISMO ORDEN....)
+
+
+---- RECOMENDACION DE ORDEN DE UNA CLASE ----------
+
+1.- propiedades
+
+        1 propiedades static
+        2 propiedades publicas
+        3 propiedades privadas
+
+2.- Metodos
+    1. Constructores estaticos ( static )
+    2. Constructor normal
+    3. Metodos estaticos
+    4. Metodos privados
+    5. resto de metodos ordenados de mayor a menor importancia
+    6. Getters and Setters
+
+
+

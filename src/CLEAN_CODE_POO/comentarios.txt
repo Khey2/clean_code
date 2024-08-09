@@ -1,0 +1,30 @@
+COMENTARIOS:
+
+
+    Es horrible leer codigo ajeno xd..
+
+
+MAL: ( LO HAGO YO )
+
+
+    const name = "John Doe";
+
+    // si name es igual a Jhon Doe
+    if( name === 'John Doe' ){
+        //entonces
+    }
+
+
+LOS COMENTARIOS DEBEN SER UNA EXPEPCCION... NO LOS USES...
+MEJOR HAZ QUE EL CODIGO SE LEA MEJOR.
+
+
+
+pero, hay veces que es necesario comentar librerias de terceros, frameworks
+
+es mejor comentar el ¿POR QUE?, no el ¿que? o el ¿como?....
+
+
+osea comenta el PORQUE estas haciendo algo de X manera sabiendo 
+que hay mas
+soluciones distintas
