@@ -1,0 +1,135 @@
+------ Dependency Inversion ( inversion de dependencias ) ---------
+
+
+
+"Los modulos de alto nivel NO DEBEN DE DEPENDER de modulos de
+     bajo nivel. Ambos deben depender de ABSTRACCIONES.
+ Las abstracciones no deben depender de CONCRECIONES. 
+ los detalles deben depender de abstracciones"
+
+
+
+Traduccion:
+
+
+- Los modulos de alto nivel no deben depender de los modulos
+    de bajo nivel
+
+            Modulos de alto nivel: los componentes de capas superiores
+
+            Modulos de bajo nivel: los componentes de capas inferiores
+
+- Ambos deben depender de abstracciones:
+
+            abstracciones: clases que se usan como interfaz, 
+                            esto dicta como lucen las clases que
+                             heredan de esta.
+
+
+- Las abstracciones no deberian depender de detalles
+
+
+- Los detalles deberian depender de abstracciones.
+            
+
+
+
+LOS COMPONENTES MAS IMPORTANTES son aquellos centrados en resolver el 
+problema subyacente al negocio, es decir, LA CAPA DE DOMINIO.
+
+
+Los componentes menos importantes son los que estan PROXIMOS a 
+la infraestructura, es decir, aquellos relacionados con:
+
+            - UI ( Interfaz de usuario )
+            - la persistencia de datos ( DB )
+            - la comunicacion con APIs externas
+
+(ver imagen arquitectura hexagonal )
+
+
+
+------ ARQUITECTURA HEXAGONAL -----------------
+
+
+solo deberias AFECTAR la capa adaptadora si cambias:
+
+    - un web service
+    - una DATABASE
+
+si migras de mysql a mongo.. solo deberias afectar la capa adaptadora 
+de la DB
+
+
+    la arquitectura hexagonal te da 4 capas 
+    (imaginalo como el cerebro humano )
+
+            - DOMINIO
+            - Aplicacion
+            - Infraestructura
+            - UI
+
+la idea es que la clase trabaje con un adaptador.. asi no destruyes TODO
+con un cambio.
+
+
+deberia ser en "teoria" facil de cambiar react, angular, vue
+
+
+INCLUSO LAS CAPAS DE UI NO DEBERIAN AFECTAR OTRAS CAPAS.
+
+
+
+
+DEPENDER DE ABSTRACCIONES: las clases deben implementar
+                         la clase abstracta para asi hacer nuestro software
+                        MAYOR TOLERANTE AL CAMBIO.
+
+
+osea, depender de la clase abstracta te da la facilidad de implementar CUALQUIER 
+clase en X metodo siempre y cuando cumpla con el contrato de la clase abstracta
+( asi como en la clase Vehiculo ).
+
+
+
+
+"Cada cambio en un componente abstracto implica un 
+    cambio en su implementacion, por el contrario,
+    los cambios en implementaciones concretas, la mayoria de veces,
+    no requieren cambios en las interfazces que implementa"
+
+
+
+
+----- INJECCION DE DEPENDENCIAS ( DI ) -------------------
+
+
+Dependencia en programacion, significa que un modulo 
+o componente requiere de OTRO para poder realizar su trabajo"
+
+
+EN algún momento nuestro programa o aplicacion llegara a estar 
+formado por MUCHOS modulos. cuando esto pase,
+es cuando debemos usar INJECCION DE DEPENDENCIAS 
+
+
+no tengas dependencias ocultas....injectalas por constructor.
+
+
+la injeccion de dependencias se aplica para que te sea facil saber
+de cuantas otras clases depende X clase, y asi no generar
+ dependencias ocultas
+que acoplen las funcionalidades de dicha clase muy fuertemente...
+
+
+- Ayuda a aplicar el principio de responsabilidad unica
+
+- Testing mas facil
+
+
+
+
+
+
+
+

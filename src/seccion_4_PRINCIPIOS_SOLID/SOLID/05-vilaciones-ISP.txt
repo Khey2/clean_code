@@ -1,0 +1,15 @@
+---- VIOLACIONES AL PRINCIPIO DE SEGREGACION DE INTERFACES -----
+
+
+- violar el principio de liskov y el principio de responsabilidad unica
+    trae como consecuencia violar el principio de segregacion de interfaces
+
+
+un codigo tolerante al cambio ayuda a proyectos de gran longevidad...
+cuando tu proyecto esta pensado para proyectos de 
+MUCHOS AÑOS DE VIDA UTIL.
+
+
+
+
+
