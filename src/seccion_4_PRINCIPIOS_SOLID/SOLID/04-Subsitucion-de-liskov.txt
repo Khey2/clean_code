@@ -1,0 +1,29 @@
+---------- 3er principio Liskov Substitution -----------------
+
+
+
+Este principio nos dice:
+
+
+        "Las funciones que utilicen PUNTEROS o REFERENCIAS a 
+            clases bases deben ser capaces de usar Objetos
+                de clases derivadas sin saberlo"
+
+
+
+El nombre viene de Barbara liskov, recibio un premio tunning ( premio novel
+en informatica )
+
+
+"Siendo U un subtipo de T, cualquier instancia de T deberia poder
+    ser substituida por cualquier instancia de U sin alterar las
+        propiedades del sistema"
+
+
+traduccion: si una clase A es extendida por una clase B, deberias poder
+            sustituir cualquier instancia de a por un objeto de 
+            b sin problemas...
+
+
+    EXPLICACION CON EJEMPLO PARA ACLARAR DUDAS:
+

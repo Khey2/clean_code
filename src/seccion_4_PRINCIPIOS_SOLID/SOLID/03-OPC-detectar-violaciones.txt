@@ -1,0 +1,8 @@
+DETECTAR VIOLACIONES AL PRINCIPIO OPEN AND CLOSE
+
+        - Los Cambios normalmente AFECTAN nuestra clase o MODULO general
+
+        - Cuando una clase o modulo afecta muchas CAPAS.
+
+
+

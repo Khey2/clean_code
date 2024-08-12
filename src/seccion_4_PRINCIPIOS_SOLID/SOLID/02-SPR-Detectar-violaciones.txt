@@ -1,0 +1,26 @@
+
+
+SRP - Violaciones:
+
+
+
+        1.- Nombres de clases / modulos MUY genericos.
+
+
+        2.- Cambios en el codigo suelen afectar la clase o módulo
+
+
+        3.- La clase involucra varias capas...
+
+
+        4.- Numero elevado de IMPORTACIONES ( 15 imports )
+
+
+        5.- Cantidad elevada de métodos publicos
+
+
+        6.- Excesivo numero de lineas. ( RELATIVO )
+
+
+
+

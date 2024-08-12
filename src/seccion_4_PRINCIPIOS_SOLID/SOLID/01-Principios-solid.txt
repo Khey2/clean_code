@@ -1,0 +1,26 @@
+Los principios SOLID buscan:
+
+
+    1-  calidad de codigo
+
+    2.- evitar code smells
+
+
+Los principios SOLID se aplican a:
+
+    - clases
+    - modulos ( archivo / funcion / estructura de datos donde puedas agrupar
+                informacion u metodos )
+
+
+
+SOLID:
+
+
+    S: Responsabilidad unica
+    O: Abierto y cerrado
+    L: Sustitucion de Liskov
+    I: Segregacion de interfaz
+    D: Inversion de dependencias
+
+

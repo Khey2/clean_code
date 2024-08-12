@@ -1,0 +1,25 @@
+-------------- S: principio de responsabilidad UNICA. -------------
+
+
+        "Nunca deberia haber más de un motivo por el cual
+            cambiar una clase o modulo"
+
+                            - Robert C. Martin
+
+
+A que se refiere el rpincipio de responsabilidad unica?.... simple:
+
+
+CADA CLASE / MODULO debe tener una responsabilidad unica.. osea... 
+hacer solo 1 cosa.
+
+esto genera poco acoplamiento, poca cohesion.
+
+
+    el principio de responsabilidad unica no se basa en crear 1 clase
+        con un solo metodo, mas bien, se basa en DISEÑAR COMPONENTES 
+            que solo esten expuestos a 1 fuente de cambio
+
+
+
+EJEMPLO DE SRP ( single responsability Principe )

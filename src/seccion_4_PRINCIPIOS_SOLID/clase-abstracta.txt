@@ -1,0 +1,8 @@
+una clase ABSTRACTA es un tipo de clase
+que se usa como interfaz de sub clases...
+
+las clases abstractas OBLIGAN que a quien extienda 
+de ellas ( osea la sub clase que herede de la clase
+abstracta ) debera implementar TODOS LOS METODOS y 
+propiedades
+de la clase abstracta ( es una interfaz a nivel de clase )

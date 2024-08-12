@@ -1,6 +1,6 @@
 import './style.css'
 // import './seccion_3_STUPID/code_smells/01_S_singleton.js'
-import './seccion_3_STUPID/code_smells/02-low-coupling'
+import './seccion_4_PRINCIPIOS_SOLID/SOLID/04-liskov-a'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 

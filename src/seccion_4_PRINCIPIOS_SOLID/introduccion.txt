@@ -1,0 +1,28 @@
+PRINCIPIOS SOLID ( NO REGLAS )
+
+
+regla: algo que SI O SI debes cumplir...
+
+principio: recomendaciones para escribir un mejor codigo..
+
+
+
+los principios solid buscan mejorar tu codigo..
+
+
+
+Violentar un principio deberia ser una expeccion... no algo regular...
+
+
+Los 5 principios S.O.L.I.D. de diseño de software son:
+
+
+    S – Single Responsibility Principle (SRP)
+
+    O – Open/Closed Principle (OCP)
+
+    L – Liskov Substitution Principle (LSP)
+
+    I – Interface Segregation Principle (ISP)
+
+    D – Dependency Inversion Principle (DIP)

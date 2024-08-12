@@ -1,0 +1,40 @@
+OCP: Principio de abierto y CERRADO
+
+
+
+
+Open and Close:
+
+
+es un principio que depende del CONTEXTO
+
+
+    "Establece que las entidades (clases, modulos, metodos, etc )
+         de software deben estar abiertas para la extension,
+          pero cerradas para la modificacion"
+
+
+
+Extension: 
+
+
+Osea: tienes un metodo que dice escribirArchivo() que escribe en -> hola.txt
+        pero, te llega un nuevo requisito, ahora piden que escriba
+        los datos en adios.txt.
+
+
+si no aplicas bien el principio... debes abrir el metodo escribirArchiv() 
+y modificarlo directamente... esto viola este principio.
+
+
+
+SOLUCION: al metodo AGREGALE un parametro para indicar el archivo
+         donde escribira
+
+            escribirArchivo( string fileName ) -> - escribirArchivo( "jose.txt")
+
+                                                  - escribirArchivo( "logs.txt")
+
+
+
+

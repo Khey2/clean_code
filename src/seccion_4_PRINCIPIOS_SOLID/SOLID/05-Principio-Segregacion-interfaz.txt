@@ -1,0 +1,17 @@
+Interface segregation ( Segregacion de Interfaz )
+
+
+        "Los clientes NO DEBERIAN estar obligados a
+            depender de interfaces que no utilicen"
+
+
+ESTE PRINCIPIO NO SE PUEDE APLICAR DIRECTAMENTE A JAVASCRIPT, 
+porque es un lenguaje debilmente tipado, esto se ve mas APLICABLE
+en lenguajes orientados a Objetos
+como en Java, c#, Tyescript ( no es un lenguaje es un tipado sobre js ).
+
+
+es que te obligen a usar X metodo en X clase aunque no lo ocupes.. 
+debido a que la interfaz se definio asi
+
+
