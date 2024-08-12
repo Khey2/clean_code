@@ -1,5 +1,5 @@
 /*
-    Refactoriza TODO lo que ves aqui y optimizalob
+    Refactoriza TODO lo que ves aqui y optimizalo
 */
 
 (() => {
@@ -8,12 +8,13 @@
     function isRedFruit( fruit: string ): boolean {
 
         let redFruits: string[] = [ 'manzana', 'cereza', 'ciruela' ];
-        return redFruits.includes(fruit); //ya devuelve true or false
+        return redFruits.includes(fruit); // ya devuelve true or false
     }
 
     //? Calificacion: 10/10, puedes usar ObjectKeys para 
     //? saber si te mandaron una key VALIDA
     type FruitColor = 'red'|'yellow'|'purple';
+
     function getFruitsByColor( color: FruitColor ): string[] {
 
         const fruitColors = {
@@ -27,19 +28,6 @@
         }
 
         return fruitColors[color];
-        // switch (color) {
-        //     case 'red':
-        //         return fruitColors.red;
-
-        //     case 'yellow':
-        //         return fruitColors.yellow;
-        
-        //     case 'purple':
-        //         return fruitColors.purple;
-        //     default:
-        //         throw Error('the color must be: red, yellow, purple');
-        // }
-
     }
 
     //? Calificacion:10/10

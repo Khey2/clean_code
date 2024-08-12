@@ -4,11 +4,10 @@ Arreglos - Arrays
             - Pon nombres en plural...como fruits, 
             people , pays.
 
-            -Excelente: fruitNames, peoplesOfSystem
+            -Excelente: fruitNames, peopleOfSystem
 
 
 Booleanos - Booleans
-
 
         - usa prefijos como is, can, has...
 
@@ -17,8 +16,8 @@ Booleanos - Booleans
                 MAL:
 
                  - open = true,    // no se a que se refiere
-                 - write = true    //puedo escribir
-                 - fruit = true    //fruit true??
+                 - write = true    // puedo escribir
+                 - fruit = true    // fruit true??
                  - active = false  //
                  - noValues = true
                  - notEmpty = true
@@ -60,13 +59,13 @@ FUNCIONES:
 
                 - createUserIfNotExists(); // evita añadir lo que hace la funcion
                                             // exactamente
-                                            // seria ideal colo createUser
+                                            // seria ideal solo createUser
                                             // por dentro la funcion 
                                             // determinara 
-                                            //si existe o no
+                                            // si existe o no
 
                 - updateUserIfNotEmpty() // igual que lo de arriba
-                - sendEmailIfFieldExists
+                - sendEmailIfFieldExists // igual que lo de arriba
 
 
             MEJOR: solo se indica verbo + susnatntivo sin espesificar excatamente
@@ -77,5 +76,5 @@ FUNCIONES:
                 - sendEmail();
 
             
-            ( tiene a ser subjetivo lo malo y bueno, peor trata que los nombres
+            ( tiende a ser subjetivo lo malo y bueno, pero trata que los nombres
             se puedan leer y comprender facilmente... verbo de la accion + sustantivo )

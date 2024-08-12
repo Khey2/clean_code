@@ -1,0 +1,78 @@
+Alto acoplamiento
+
+
+Cuando desarrolles APPS, se busca un
+
+    - Bajo acoplamiento
+    - Buena cohesion
+
+
+"Queremos diseñar componentes que sean auto-contenidos
+    , auto suficientes e independientes. Con un objetivo y
+        un proposito BIEN definido"
+
+                "the pragmatic Programmer"
+
+
+
+
+Cohesion: Lo que hace la clase... baja cohesion es que la CLASE
+            haga muchas cosas que no le pretenecen.
+
+
+            Baja Cohesion: la clase User maneja 
+                            - Envio de correos.
+                            - Checkeo de facturas.
+                            - Peticion de Usuarios a una api
+                            - Maneja el login
+                            - Valida Horarios de empleados.
+
+            Alta cohesion: la clase hace SOLO lo que debe hacer...
+
+                            User:
+
+                                - SOLO cosas que deban ver con usuario... 
+                                            sacar 1 usuario, sacar X cantidad de users
+                                            , cambiar sus status:
+
+
+Resumen: una baja cohesion significa que la clase SOLO tiene cosas
+        ( y hace cosas ) que pertenecen a su objetivo.. Auth SOLO deberia autenticar,
+        sendEmail solod eberia mandar emails.
+
+        una Alta Cohesion es cuando la clase Auth manda correos, checa facturas..
+        esta ahciendo cosas que no le corresponden...
+
+
+idealmente TODO lo relacionado entre si este en una clase y cuandos e ocupa
+informacion de otra clase, haya una via facil y simple de conectarlas...
+
+
+
+Acoplamiento: Se refiere a que tanto estan relacionadas o son DEPENDIENTES
+            ( clase A depende de B para funcionar y alrrevez ) dos clases
+            o modulos entre si.
+
+
+            BAJO ACOPLAMIENTO: cambiar algo en clase A no deberia cambiar
+                                nada del funcionamiento de la clase B.
+
+            Alto acoplamiento: cambiar la clase A afecta a la clase B, C Y D.
+                                a su vez.. cambiar B afecta a C, Z y A.
+
+
+En el desarrollo de software se busca el BAJO ACOPLAMIENTO y BAJA COHESION de clases, osea.
+
+
+    "se busca que las clases SOLO hagan lo que deben de hacer ( lo que su nombre indica )
+        y que estas NO DEPENDAN de otras... en caso de que haya dependencia. 
+        plantear una forma sencilla de conectarlas..."
+
+
+
+
+
+COMO GENERO BAJOA COPLAMIENTO?
+
+
+usa clases de composicion... en vez de herencias.

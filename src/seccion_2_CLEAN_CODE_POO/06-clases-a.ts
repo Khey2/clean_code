@@ -1,12 +1,13 @@
 (()=>{
 
-    // No aplicando principio de responsabilidad unica 
+    //! No aplicando principio de responsabilidad unica 
     
     type Gender = 'M'|'F'
+
     //? Definir clase de forma normal ( y LARGA )
     // class Person {
-    //     public name:    string;
-    //     public gender:  Gender;
+    //     public name:      string;
+    //     public gender:    Gender;
     //     public birthdate: Date;
 
     //     constructor( name: string, gender: Gender, birthdate: Date ){
@@ -40,7 +41,7 @@
             //llamando constructor del padre.. necesario, porque debes 
             // inicializar
             // las propiedades del constructor del padre
-            super( name, gender, birthdate)
+            super( name, gender, birthdate )
             this.lastAccess = new Date();
         }
 
@@ -49,12 +50,13 @@
         }
     }
 
-    //configuracion de usuario necesita props y funct de User
+    //UserSettings de usuario necesita propiedades y funciones de User
     //! para cumplir los requisitos debes mandar todas las propiedades 
-    //! que ocupa USER para funcionar, e internamente
+    //! que ocupa USER para funcionar internamente...ademas
     //! USER OCUPA PROPIEDADES DE PERSON, por lo que deberas mandar ambas
     class UserSettings extends User{
         constructor(
+            //!Props de UserSettings
             public workingDirectory: string,
             public lastOpenFolder: string,
             //!Props user
@@ -68,8 +70,6 @@
             super(email, role, name, gender, birthdate);
         }
     }
-    // const newPerson = new Person('Fernando', 'M', new Date('2000-06-06'));
-    // console.log({ newPerson });
 
     //! User settings hace muchas cosas distintas...
     //! directorio del usuario, ultimo folder abierto, email
@@ -82,10 +82,10 @@
         'Fernando'   ,
         'M'          ,
         new Date('1985-09-21')
-
     )
 
-    // const newUser = new User(  );
+    //? Si te fijas el problema es que esta clase esta FUERTEMENTE ACOPLADA A OTRAS 2
+    //?.. si 1 cambia.. todo cambiara como consecuencia
     console.log( {userSettings, valid: userSettings.checkCredentials()} )
 
 })()

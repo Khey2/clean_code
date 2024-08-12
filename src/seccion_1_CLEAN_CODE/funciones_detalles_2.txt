@@ -5,7 +5,7 @@ FUNCIONES - OTRAS RECOMENDACIONES
 
     - deben tener un tamaño reducido
 
-    - Funciones de una sola linea sin causar complejidad
+    - Puedes usar funciones de una sola linea SOLO si no causan complejidad
     ( que no sea dificil de leer para nosotros,
      aunque sea mas optimo en tema de microsegundos )
 
@@ -16,13 +16,14 @@ FUNCIONES - OTRAS RECOMENDACIONES
     - Evita el uso del ELSE, no uses else a menos que 
      sea estrictamente necesario
 
-     - Prioriza el uso de la condicion ternaria
+    - Prioriza el uso de la condicion ternaria
 
 
 MAL:
 
 
 const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }) => {
+
         let result;
         if ( isDead ) {
             result = 1500;
@@ -41,16 +42,19 @@ const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false })
         return result;
     }
 
-    const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }): number => {
-
-            if ( isDead ) return 1500;
-            
-            if ( isSeparated ) return 2500;
-        
-            return ( isRetired ) ? 3000 : 4000;
-    }
-
-
 
 BIEN:
+
+
+const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }): number => {
+
+        if ( isDead ) return 1500;
+        
+        if ( isSeparated ) return 2500;
+    
+        return ( isRetired ) ? 3000 : 4000;
+}
+
+
+
 

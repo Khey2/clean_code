@@ -1,0 +1,80 @@
+
+
+---------------- ACOPLADORES ---------------
+
+
+todo lo que se muestra aqui  contribuye a un ACOPLAMIENTO excesivo
+entre clases o muestran lo que sucede si el acoplamiento se 
+reemplaza por una delegacion excesiva
+
+
+
+--------------------- Feature Envy -------------------------
+
+un metodo accede a los datos de otro objeto envez de sus propios 
+datos.
+
+SINTOMA: usas una clase y esa clase llama a mas informacion que
+         se encuentra en otro lugar que en ella misma.
+
+
+Solucion: si el metodo / funcion / modulo hace MUCHA referenciar a un 
+        funcion de otro modulo, talvez toca refactorizar.
+
+
+
+-------------------- INTIMIDAD INAPROPIADA --------------------
+
+
+cuando una clase usa CAMPOS Y METODOS internos de OTRA CLASE.
+
+
+clases que estan mucho tiempo juntas... hay problemas...las buenas clases
+deben de saber LO MENOS POSIBLE de otras clases.
+
+
+------------------- CADENA DE MENSAJE ------------------------
+
+
+clase A llama a CLASE B y de ahi llama a C y luego a D
+
+
+
+cuando una funcion llama a muchos objetos...hacen que 
+el cliente dependa de la navegacion, un cambio debe de 
+agregar / remover algo del puente.
+
+
+SOLUCION: Ver si puedes eliminar 
+        comunicacion de A de 10 cosas y reducir a 2.
+
+
+
+
+------------------- The middle Man --------------------------------
+
+
+Si una clase realiza SOLO 1 ACCION y esa accion es DELEGAR 
+ALGO A OTRA CLASE... 
+
+pasa cuando haces una refactorizacion de una cadena de mensajes.
+
+
+las clases debe de evitar ese punto intermedio... evita 
+la cadena de mensajes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

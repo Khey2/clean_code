@@ -1,0 +1,68 @@
+-------- Codigo no Probable ( dificil de TESTAR ) -------
+
+
+Esto es producot ( resultado ) de un alto acoplamiento dentre las clases
+, cuando ocupamos una dependencia y no la damos mediante constructor...entonces
+se hace dificil de testear.
+
+
+las dependencias SINGLETON ( ambito global ) hace dificil las pruebas...
+( dificulta )
+
+
+
+-------- OPTIMIZACIONES prematuras ------------------
+
+
+NO TE ANTICIPES a requisitos de negocio... no crees complejidades accidentales,
+osea, implementar una solucion compleja a la minima necesaria.
+
+
+( esto la experiencia te lo dara, es la capacidad para decir, para x cosa.. usare
+redux, una funcion, un handler, solo un codigo, etc.. debe haber un balance)
+
+
+--------------- nombres poco descriptivos ------------------------
+
+
+nombres de clases, funciones, variables MAL NOMBRADAS o genericas.
+
+
+la idea es que cuando alguien analize tu codigo,
+ exprese pocas caras de confusion ( 2 por ejemplo ), en vez de 
+ 12
+
+
+ ----------- DUPLICIDAD DE CODIGO ( no aplicar DRY ) ------------------
+
+
+ REAL ( codigo IDENTICO ENTRE 2 LUGARES O MAS , si cmabias 1 cambias TODO )
+
+ FALSO: El codigo LUCE SIMILAR, pero cumple funciones distintas, puedes manejarlo distinto
+        pero tammbien podrias centralizarlo y usarlo dependiendo un parametro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

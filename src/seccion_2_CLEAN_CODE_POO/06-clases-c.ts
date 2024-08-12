@@ -1,8 +1,15 @@
 (()=>{
+    //! APLICANDO PRINCIPIO DE COMPOSICION UNICA PARA SUSTITUIR A LA HERENCIA
 
     //? Aplicando principio de responsabilidad UNICA
     //? Priorizar compisicion frente a herencia 
-    //? ( EVITA HERENCIA de extends AMENOS QUE SEA NECESARIO)
+    //? ( EVITA HERENCIA de extends AMENOS QUE SEA NECESARIO )
+
+    /**
+     * Que es la composicion?, es crear 1 clase que UNA A TODAS, entonces
+     * esa clase funciona como una CAPA en la cual mandaras a llamar
+     * instancias de otras clases y les mandaras los patrametros que ocupen
+     */
 
     type Gender = 'M'|'F'
 
@@ -13,6 +20,7 @@
     }
 
     //? SI APLICA EL PRINCIPIO DE RESPONSABILIDAD UNICA
+    //? porque no depende de nadie
     class Person {
         public birthdate : Date;
         public gender    : string;
@@ -30,7 +38,7 @@
         email:     string;
         role:      string;
     }
-
+    //? No depende de nadie
     class User {
         public email       : string;
         public lastAccess  : Date;
@@ -49,10 +57,12 @@
         }
     }
 
+
     interface SettingProps{
         workingDirectory: string,
         lastOpenFolder: string,
     }
+    //? No depende de nadie
     class Settings {
         public workingDirectory: string;
         public lastOpenFolder: string;
@@ -75,7 +85,7 @@
         birthdate: Date
     }
 
-    //clase que es una composicion de otras clases
+    //! clase que es una composicion de otras clases
     //! ESTO ES MAS FACIL DE ENTENDER QUE LA FORMA B o A
     class UserSettings{
         public person  : Person;
@@ -84,13 +94,18 @@
 
         constructor(
             {
+                //! Props de Person
                 name, gender, birthdate,
+                //! Props de user
                 email, role ,
+                //! Props de esta SeetingProps
                 lastOpenFolder, workingDirectory
+
             }: UserSettingsProps
         ){
-            this.person = new Person({ name, gender, birthdate});
-            this.user = new User({ email, role });
+            //? se mandan a llamar las instancias con params envez de usar extends
+            this.person   = new Person({ name, gender, birthdate});
+            this.user     = new User({ email, role });
             this.settings = new Settings({ lastOpenFolder, workingDirectory });
         }
     }
@@ -108,8 +123,8 @@
       }
     )
 
-    //! ahora userSettings esta compuesto por varias clases.. ( por eso e suna clase de tipo
-    //! composicion )
+    //? ahora userSettings esta compuesto por varias clases.. ( por eso es una clase de tipo
+    //? composicion )
 
 
     console.log( {userSettings} )

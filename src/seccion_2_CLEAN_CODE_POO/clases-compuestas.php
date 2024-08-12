@@ -1,18 +1,25 @@
 <?php
 
+
+//! ESTE es un ejemplo de composicion en PHP mandado 
+//! en un comentario de devtalles ( NO ES DE FERNANDO HERRERA )
+
+
+//? Se usan enumeraciones para indicar
+//? tipos de datos permitidos para 1 variable
 enum Gender: int
 {
-    case MALE = 1;
+    case MALE   = 1;
     case FEMALE = 2;
-    case OTHER = 3;
+    case OTHER  = 3;
 
     static public function getName($value): string
     {
         return match ($value) {
-            self::MALE => 'Male',
+            self::MALE   => 'Male',
             self::FEMALE => 'Female',
-            self::OTHER => 'Other',
-            default => 'Gender not allowed'
+            self::OTHER  => 'Other',
+            default      => 'Gender not allowed'
         };
     }
 }
@@ -30,6 +37,8 @@ class Person
     }
 }
 
+//? en PHP no hay soporte para parametros con interface... debes implementar
+//? una interfaz a nivel de clase que espesifique el metodo, sus parametros y su retorno.
 interface UserInterface
 {
     public function checkCredentials(): bool;
@@ -43,8 +52,8 @@ class User implements UserInterface
         public string $email,
         public string $role,
     ) {
-        $this->email = $email;
-        $this->role = $role;
+        $this->email      = $email;
+        $this->role       = $role;
         $this->lastAccess = date('Y-m-d');
     }
 
@@ -60,12 +69,13 @@ class SettingsProps
         public string $workingDirectory,
         public string $lastOpenFolder,
     ) {
-
         $this->workingDirectory = $workingDirectory;
-        $this->lastOpenFolder = $lastOpenFolder;
+        $this->lastOpenFolder   = $lastOpenFolder;
     }
 }
 
+//? Esta es la clae compuesta... aqui dentro nos conectamos
+//? a las otras 3 clases y la usamos como un lugar CENTRALIZADO
 class UserSettings
 {
     public Person $person;
@@ -83,8 +93,8 @@ class UserSettings
         string $birthday
     )
     {
-        $this->person = new Person($name, $gender, $birthday);
-        $this->user = new User($email, $role, $lastAccess);
+        $this->person        = new Person($name, $gender, $birthday);
+        $this->user          = new User($email, $role, $lastAccess);
         $this->settingsProps = new SettingsProps($workingDirectory, $lastOpenFolder);
     }
 }

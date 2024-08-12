@@ -4,16 +4,16 @@ Uniformidad en el Proyecto....
 PROBLEMAS SIMILARES, SOLUCIONES SIMILARES.
 
 
-osea... nombra de manera similar funciones... no te salgas de la nombra
+osea... nombra de manera similar funciones... no te salgas de la norma.
 
 
 -----------NOMBRAMIENTO DE FUNCIONES ---------------
 
-createUser | createNew Product == X
+createUser | createNewProduct == X
 
 createUser | createProduct == Correcto
 
----------------- capetas y ARCVHIVOS -------------------
+---------------- carpetas y ARCVHIVOS -------------------
 
 al igual que nombre de archivos o carpetas... 
 deben seguir el mismo estandar.

@@ -1,0 +1,63 @@
+STUPID
+
+
+no es una ofenza.... esta enfocada en TODO LO QUE NO SE DEBE DE HACER....
+
+
+es un acronimo que concatena ANTI PATRONES.
+
+
+
+a todo lo que esta en STUPID se le llama code smells ( hay cosas fuera del acronimo que tambien son malas
+y se incluyen como code smells )
+
+code smells es como "huele feo".
+
+
+
+--------------- Acronimo STUPID -------------
+
+
+son 6 Code Smells que debes evitar....
+
+code smell hace referencia a que 
+algo no esta del todo bien en el codigo....
+
+
+ACRONIMO:
+
+  S  Singleton: patron singleton ( 1 instancia para toda la aplicacion )
+  T  Tight Coupling: Alto acoplamiento
+  U  Untestability: codigo no probable (unit testing)
+  P  Premature Optimization: optimizaciones prematuras
+  I  Indescriptive Naming: nombres poco descriptivos
+  D  Duplication: duplicidad de codigo, no aplicar el principio DRY
+
+
+
+  ------------ singleton ----------------------
+
+PROS:
+
+  El unico punto fuerte de SINGLETON es que a lo largo de tu aplicacion
+  aseguras que solo se tenga 1 instancia de cualquier cosa y que esta 
+  no cambie 
+
+  cuando ocupas que cierta informacion se mantenga a lo 
+  largo de la app...
+
+¿Porque singleton se considera code smell?
+
+CONTRAS:
+
+    - Vive en el contexto global.
+    - Puede ser modificado por cualquiera.
+    - No es rastreable
+    - Dificil de testear debido a su ubicacion.
+
+
+una clase singleton es MUY dificil de probar... 
+
+
+
+    

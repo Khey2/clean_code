@@ -1,0 +1,67 @@
+
+Refactoring.Guru ( de aqui se extrae el curso, esta en ingles )
+
+
+---------------- INFLACION --------------------------------
+
+
+Cuando un metodo contiene MUCHAS lineas de codigo... cualquier metodo
+que tenga mas de 10 lineas de codigo... deberias analizarlo...
+
+
+PREOCUPATE de que el codigo sea legible...
+
+
+Otro caso de inflacion son CLASES muy grandes ( "infladas" ).
+
+lcas clases no tienen PORQUE hacer TAREAS que no le pertenece.
+
+SOLUCION: parte la clase en otras clases.. y que cada 1 haga una cosa.
+mejorando su cohesion.
+
+
+
+----------------- OBSESION PRIMITIVA -----------------------
+
+Se refiere al uso de datos primitivos / constantes .
+
+ejemplo: userAdminRole = 1, para referisre que un usuario es admin
+
+problema: la OBSESION primitiva es crear un primitivo para resolver algo.
+        solo necesito x espacio en memoria para solucionarlo...
+
+
+el problema es que poco a poco se necesitan mas CAMPOS, al final la clase / modulo
+es muy grande y dificil de manejar.
+
+
+TRATAMIENTO: gran cantidad de campos primitivos... podrias agruparlos en su propio
+objeto.
+
+
+------------------ Lista larga de parametros ----------------------
+
+
+no mas de 3/4 parametros por funcion, una lista larga de parametros 
+es dificil de manejar algo..
+
+solucion: limita a 3 parametros y comprueba que los valores 
+          sean NECESARIOS. 
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,15 +6,15 @@ DESARROLLO DE SOFTWARE
 
 EJEMPLOS:
 
-    1.- falto refacorizacion
+    1.- falta refacorizacion
     2.- se hizo algo de manera inadecuada
     3.- falto testing
 
 por cuestiones de tiempo dejaste algo "medio raro" 
-que funciona
-y dejas la deuda a futuro,
+que funciona y dejas la deuda a futuro,
 
  LA SECCION 1 es 
+
 sobre deuda tecnica.
 
 
@@ -28,11 +28,11 @@ ejercicios sobre:
     - Nombres de variables
     - Nombres para funciones
     - Ejercicios de refactorización
-    - Principio DR
+    - Principio DRY
 
 Esta sección procura que empecemos a escribir 
 código que sea fácil de leer por nosotros y otros
- desarrolladores.
+desarrolladores.
 
 
 ¿Que es la deuda tecnica?
@@ -54,7 +54,8 @@ genera costos a futuro
                     
                     es cuando el desarrollador actua
                     de forma conciente e imprudente 
-                  , lleva a un proyecto
+                  
+                    lleva a un proyecto
                     con poca calidad de codigo
 
                     "no hay tiempo, solo copia y pega para
@@ -63,6 +64,7 @@ genera costos a futuro
     2.- deuda inadvertida: PELIGROSA, se genera por 
                            falta de experiencia
                             o conocimiento... 
+
                             "¿Que son patrones de diseño?
 
 
@@ -70,7 +72,8 @@ genera costos a futuro
                         sabes que tienes la deuda, eres 
                         conciente pero, si no la pagas a 
                         tiempo, pagaras mas intereses
-                        despues
+                        despues.
+
 
     4.-  deuda prudente e inadvertida:
 
@@ -79,6 +82,7 @@ genera costos a futuro
                         que te das cuenta DESPUES cuando empiezas a
                         codificar la app, ahi te das cuenta de las deudas
                         y aprendes.
+
 
 Caer en deuda tecnica es normal y a menudo inevitable 
 ( como el fallar )

@@ -2,7 +2,7 @@ FUNCIONES
 
 
     "Sabemos que estamos desarrollando codigo 
-    limpio (clean code ) cuando cada funcion 
+    limpio (clean code) cuando cada funcion 
     hace exactamente lo que su nombre indica"
 
 
@@ -14,21 +14,24 @@ function sendEmail(): boolean {
 
     // Verificar Correo
 
-    // Construir cuerpod el mensaje
+    // Construir cuerpo del mensaje
 
     // Enviar Correo
 
-    //Si todo sale bien
+    // Si todo sale bien
+
     return true;
 }
 
 PROBLEMA:
 
-El problema aca es lo que hace la funcion... la funcion 
-- manda email
-- verifica si el usuario existe
-- revisa la CONTRASEÑA
-- crea usuario en base de datos
+El problema en el siguiente codigo es LA CANTIDAD de cosas
+de las que es responsable la funcion:
+
+    - manda email
+    - verifica si el usuario existe
+    - revisa la CONTRASEÑA
+    - crea usuario en base de datos
 
 function sendEmail(): boolean {
 
@@ -48,17 +51,16 @@ PARAMETROS Y ARGUMENTOS:
 
 function sendEmail ( user ) // user: es 
                             el parametro que recibe
-                             la funcion
+                            la funcion
 
 //cuando mandas a llamar la funcion en este caso
-// el correo que mandas es el ARGUMENTO
-sendEmail( 'msilbvarubios@hotmail.com);
+// el correo que mandas es el ARGUMENTO.
+sendEmail( 'joselito@hotmail.com);
 
 
 
-resumen: cuando utilizas es argumentos, 
-cuando defines la funcion
-son parametros
+resumen: cuando utilizas la funcion lo que mandas se le llama argumento/s, 
+cuando defines la funcion son parametros.
 
 
 
@@ -67,7 +69,7 @@ las definiciones de funciones.
 
 
 idealmente es mejor IMPLEMENTAR una interfaz en funciones que requieran 
-mas de 3 parametros.. para delegar a la innterfaz el tipado
+mas de 3 parametros.. para delegar a la interfaz el tipado
 de los parametros
 
 

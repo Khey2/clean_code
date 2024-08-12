@@ -33,7 +33,7 @@
     const todayDate = new Date();
     
     // días transcurridos - elapsed time in days
-    const TranscurredDays: number = 23;
+    const transcurredDays: number = 23;
     
     // número de archivos en un directorio - number of files in directory
     const numberOfFilesInDirectory = 33;

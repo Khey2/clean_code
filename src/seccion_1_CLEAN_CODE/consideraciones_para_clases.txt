@@ -12,7 +12,7 @@ Clases
             - class Data {};
             - class Info {};
             
-            el nombre de la clase es lo ma simportante, 
+            el nombre de la clase es lo mas importante, 
             le da un sentido logico
             a la vida de dicha clase, un nombre generico
              le da MUCHAS
@@ -20,7 +20,7 @@ Clases
 
             - class SpecialMonsterView
 
-    - EL NOMBRE es lo ma simportante de la clase
+    - EL NOMBRE es lo mas importante de la clase
     - EL NOMBRE debe ser formado por un sustantivo o frases
             en sustantivo
 
@@ -31,7 +31,7 @@ Clases
 
     ¿ Que exactamente hace la clase?
 
-    ¿ Como exactamente esta clase realiza cierta tarea?
+    ¿ Como exactamente esta clase realiza cierta tarea ?
 
     ¿ Hay algo espesifico sobre su ubicacion?
 

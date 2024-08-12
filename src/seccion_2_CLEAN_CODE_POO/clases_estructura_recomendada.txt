@@ -1,4 +1,4 @@
-ESTRUCTURA RECOMENDADA PRA UNA CLASE:
+ESTRUCTURA RECOMENDADA PARA UNA CLASE:
 
 
 "El buen codigo parece estar escrito por alguien a quien le importa"
@@ -23,7 +23,7 @@ EN EL EQUIPO DE TRABAJO DEBEN CREARLAS DE LA MISMA MANERA.
     2. Constructor normal
     3. Metodos estaticos
     4. Metodos privados
-    5. resto de metodos ordenados de mayor a menor importancia
+    5. Resto de metodos ordenados de mayor a menor importancia
     6. Getters and Setters
 
 

@@ -1,7 +1,7 @@
 COMENTARIOS:
 
 
-    Es horrible leer codigo ajeno xd..
+    Es horrible leer codigo ajeno....
 
 
 MAL: ( LO HAGO YO )
@@ -20,11 +20,12 @@ MEJOR HAZ QUE EL CODIGO SE LEA MEJOR.
 
 
 
-pero, hay veces que es necesario comentar librerias de terceros, frameworks
+pero, hay veces que es necesario comentar librerias de terceros, frameworks...
 
-es mejor comentar el ¿POR QUE?, no el ¿que? o el ¿como?....
+en estos casos:
+
+    es mejor comentar el ¿POR QUE?, no el ¿que? o el ¿como?....
 
 
 osea comenta el PORQUE estas haciendo algo de X manera sabiendo 
-que hay mas
-soluciones distintas
+que hay otras soluciones distintas ( porque escogi X camino y no Z, explica el porque )

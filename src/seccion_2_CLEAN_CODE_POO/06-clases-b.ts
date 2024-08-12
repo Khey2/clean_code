@@ -40,7 +40,7 @@
         constructor(
             { email, role, name, gender, birthdate }: UserProps,
         ){
-            super( {name, gender, birthdate} );
+            super( { name, gender, birthdate} );
 
             this.lastAccess = new Date();
             this.email = email;
@@ -66,17 +66,23 @@
     class UserSettings extends User{
         public workingDirectory: string;
         public lastOpenFolder: string;
+
         constructor(
             {
-            workingDirectory,
-            lastOpenFolder,
-            email,
-            role,
-            name,
-            gender,
-            birthdate} : UserSettingProps
+                //? UserSettingsProps
+                workingDirectory,
+                lastOpenFolder,
+                //? Person props
+                name,
+                gender,
+                birthdate,
+                //? UserProps
+                email,
+                role
+            } : UserSettingProps
         ){
             super({email, role, name, gender, birthdate});
+            
             this.workingDirectory = workingDirectory
             this.lastOpenFolder = lastOpenFolder
         }
